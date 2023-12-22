@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarTextColor">@color/white</item>
+        <item name="android:dayOfWeekBackground">#FF0064D2</item>
+        <!-- Tambahkan item lainnya sesuai kebutuhan Anda -->
+    </style>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_playing"
+        android:title="Playing"
+        android:icon="@drawable/baseline_theaters_24"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_upcoming"
+        android:title="Up Coming"
+        android:icon="@drawable/baseline_upcoming_24"
+        android:orderInCategory="300"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_akun"
+        android:title="Account"
+        android:icon="@drawable/baseline_person_24"
+        android:orderInCategory="400"
+        app:showAsAction="always" />
+
+</menu>

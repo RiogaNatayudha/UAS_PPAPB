@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="12dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginHorizontal="24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/gambar_item"
+            android:layout_marginTop="4dp"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:src="@drawable/spiderman"
+            android:background="@drawable/rounded_corners"
+            android:contentDescription="Film 1"/>
+
+        <TextView
+            android:id="@+id/judul_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spiderman"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:gravity="center"
+            android:textColor="#0064D2"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+

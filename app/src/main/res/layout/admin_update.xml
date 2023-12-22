@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFEDFB"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewFloating"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:paddingHorizontal="48dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/adminListUpdateImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            app:cardCornerRadius="16dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/imageViewUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add" />
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adminListUpdateJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul"
+            android:background="@drawable/rounded_textview"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:padding="15dp"
+            android:inputType="text" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adminListUpdatePembuatDanRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pembuat dan Rating ( a | b)"
+            android:background="@drawable/rounded_textview"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:padding="15dp"
+            android:inputType="text" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:height="90dp"
+            android:id="@+id/adminListUpdateDescription"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_textview2"
+            android:hint="Description"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:layout_gravity="center"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adminListUpdateGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Genre (a, b, c)"
+            android:background="@drawable/rounded_textview"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:padding="15dp"
+            android:inputType="text" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adminListUpdateStoryline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Storyline"
+            android:background="@drawable/rounded_textview"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:padding="15dp"
+            android:inputType="text" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/adminListUpdateButton"
+            android:layout_marginTop="36dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="UPDATE FILM"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
